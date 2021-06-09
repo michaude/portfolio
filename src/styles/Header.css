@@ -1,0 +1,36 @@
+* {
+    font-family: 'Arima Madurai', sans-serif;
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: #ffd369;
+    cursor: pointer;
+}
+
+.header {
+    align-items: center;
+    background-color: #222831;
+    color: #fff;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.header-item {
+    margin: 0 4rem;
+}
