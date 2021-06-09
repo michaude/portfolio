@@ -5,6 +5,12 @@
 
 h3 {
     font-size: 1.5rem;
+    font-family: 'Ribeye', cursive;
+}
+
+a {
+    color:#fff;
+    text-decoration: none;
 }
 
 a:hover {
@@ -15,7 +21,6 @@ a:hover {
 .header {
     align-items: center;
     background-color: #222831;
-    color: #fff;
     display: flex;
     height: 6rem;
     justify-content: space-between;
@@ -28,7 +33,7 @@ a:hover {
 .header-links {
     display: flex;
     justify-content: space-between;
-    width: 50rem;
+    width: 40rem;
 }
 
 .header-item {

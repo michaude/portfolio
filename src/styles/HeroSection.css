@@ -1,4 +1,13 @@
+h1 {
+    font-family: 'Ribeye', cursive;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+}
+
 #hero {
+    align-items: center;
     background-color: #222831;
-    height: 53.3rem;
+    display: flex;
+    height: 48rem;
+    justify-content: space-evenly;
 }
