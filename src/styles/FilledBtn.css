@@ -1,0 +1,12 @@
+.filled-btn {
+    color: #222831;
+}
+
+.filled-btn:hover {
+    background-color: #ffd369;
+}
+
+.filled-btn:active {
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
