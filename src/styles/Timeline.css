@@ -1,0 +1,31 @@
+.timeline ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0 0 0 40%;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+
+.timeline ul::before {
+    content: "";
+    display: flex;
+    width: 0;
+    height: 100%;
+    border: 3px dashed #222831;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.timeline ul li{
+    position: relative;
+    padding: 0 2%;
+    margin: 0 0 8% 0;
+    color: #222831;
+    border-radius: 10px;
+    line-height: 20px;
+    width: 35%;
+}

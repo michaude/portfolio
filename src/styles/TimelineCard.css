@@ -1,0 +1,63 @@
+.timeline-card-content {
+    background-color: rgba(255, 211, 105, 0.3);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.timeline-card-content:hover {
+    box-shadow: 4px 6px rgb(201, 201, 201);
+}
+
+.timeline-card-content > span {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    border: 3px solid #222831;
+    position: absolute;
+    top: 0;
+    left: -30px
+}
+
+.timeline-card-content > span::before, 
+.timeline-card-content > span::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffd369;
+    border: 3px solid #222831;
+    position: absolute;
+    left: -9.5px
+}
+
+.timeline-card-content > span::before {
+    top: -10px;
+}
+
+.timeline-card-content > span::after {
+    top: 95%;
+}
+
+.job-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.years span {
+    position: absolute;
+    left: -120px;
+    color: #222831;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.years span:first-child {
+    top: -8px;
+}
+
+.years span:last-child {
+    top: 94%;
+}
+
