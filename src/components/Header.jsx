@@ -8,10 +8,10 @@ function Header() {
                 <h3>RCHL</h3>
             </div>
             <div className="header-links header-item">
-                <a href="/">About</a>
-                <a href="/">School</a>
-                <a href="/">Experience</a>
+                <a href="#hero">About</a>
+                <a href="#experience">Experience</a>
                 <a href="/">Projects</a>
+                <a href="/">Contact Me</a>
             </div>
         </div>
         

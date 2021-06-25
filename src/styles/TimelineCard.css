@@ -1,63 +1,83 @@
+.timeline-card {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px -27px;
+    width: 50%;
+}
+
+.timeline-card:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
 .timeline-card-content {
-    background-color: rgba(255, 211, 105, 0.3);
-    padding: 5%;
-    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 400px;
+    max-width: 70%;
+    text-align: right;
 }
 
-.timeline-card-content:hover {
-    box-shadow: 4px 6px rgb(201, 201, 201);
-}
-
-.timeline-card-content > span {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-    border: 3px solid #222831;
+.timeline-card-content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
     position: absolute;
-    top: 0;
-    left: -30px
-}
-
-.timeline-card-content > span::before, 
-.timeline-card-content > span::after {
-    content: "";
-    display: block;
+    right: -7.5px;
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
     width: 15px;
     height: 15px;
-    border-radius: 50%;
-    background: #ffd369;
-    border: 3px solid #222831;
-    position: absolute;
-    left: -9.5px
 }
 
-.timeline-card-content > span::before {
-    top: -10px;
+.timeline-card:nth-child(odd) .timeline-card-content {
+    text-align: left;
+    align-items: flex-start;
 }
 
-.timeline-card-content > span::after {
-    top: 95%;
+.timeline-card:nth-child(odd) .timeline-card-content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.job-title {
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.years span {
-    position: absolute;
-    left: -120px;
-    color: #222831;
-    font-size: 80%;
+.timeline-card-content time {
+    color: #777;
+    font-size: 12px;
     font-weight: bold;
 }
 
-.years span:first-child {
-    top: -8px;
+.timeline-card-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    max-width: 250px;
 }
 
-.years span:last-child {
-    top: 94%;
+.timeline-card-content .timeline-circle {
+    background-color: #fff;
+    border: 3px solid #ffd369;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 9;
 }
 
+.timeline-card:nth-child(odd) .timeline-card-content .timeline-circle {
+    right: auto;
+    left: -40px;
+}

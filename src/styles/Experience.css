@@ -1,9 +1,16 @@
-.heading-xp { 
-    color: #222831;
+#experience {
+    background-image: linear-gradient(135deg, #d0d3d8 0%, #c3cfe2 100%);
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 10vh;
+	margin: 0;
+	padding: 4rem 0;
 }
 
-#experience {
-    height: 50rem;
-    padding: 0 16.5%;
-    text-align: center;
+.heading-xp {
+	color: #222831;
 }

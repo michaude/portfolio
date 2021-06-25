@@ -6,21 +6,17 @@ import xpList from './xp-data';
 function Timeline() {
     return (
         <div className="timeline">
-            <ul>
-                {xpList.map((el) => {
-                    return (
-                        <li>
-                            <TimelineCard
-                                start={el.start}
-                                end={el.end}
-                                title={el.title}
-                                company={el.company}
-                            />
-                        </li>
-                    )
-                })}
-                
-            </ul>
+            {xpList.map((el, idx) => {
+                return (
+                    <TimelineCard
+                        start={el.start}
+                        end={el.end}
+                        title={el.title}
+                        company={el.company}
+                        key={idx}
+                    />
+                )
+            })}
         </div>
     );
 }

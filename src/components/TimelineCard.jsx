@@ -3,15 +3,15 @@ import '../styles/TimelineCard.css';
 
 function TimelineCard(props) {
     return (
-        <div className="timeline-card-content">
-            <span></span>
-            <div className="job-title">{props.title}</div>
-            <div className="company">{props.company}</div>
-            <div className="years">
-                <span>{props.start}</span>
-                <span>{props.end}</span>
+        <div className="timeline-card">
+            <div className="timeline-card-content">
+                <time>{props.start} - {props.end}</time>
+                <h3 className="job-title">{props.title}</h3>
+                <p className="company">{props.company}</p>
+                <span className="timeline-circle"></span>
             </div>
         </div>
+        
     );
 }
 
