@@ -13,7 +13,7 @@ function HeroSection() {
                     <FilledBtn><i className="fas fa-file-download"></i> download my CV</FilledBtn>
                 </div>
                 <div className="hero-item">
-                    <img alt="" src="./images/circle-cropped.png"  />
+                    <img alt="" src="./public/images/circle-cropped.png"  />
                 </div>
             </div>
             <i className="fas fa-sort-down icon-hero"></i>
