@@ -12,6 +12,7 @@ function Timeline() {
                         start={el.start}
                         end={el.end}
                         title={el.title}
+                        team={el.team}
                         company={el.company}
                         key={idx}
                     />

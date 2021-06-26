@@ -7,7 +7,8 @@ function TimelineCard(props) {
             <div className="timeline-card-content">
                 <time>{props.start} - {props.end}</time>
                 <h3 className="job-title">{props.title}</h3>
-                <p className="company">{props.company}</p>
+                <h4>{props.team}</h4>
+                <p>{props.company}</p>
                 <span className="timeline-circle"></span>
             </div>
         </div>
