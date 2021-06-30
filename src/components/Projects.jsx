@@ -11,7 +11,9 @@ function Projects() {
                 {projectsList.map((elem, idx) => {
                     return (<ProjectCard 
                     key={idx}
-                    picture={elem.picture}
+                    githubLink={elem.githubLink}
+                    image={elem.picture}
+                    projectLink={elem.projectLink}
                     title={elem.title} 
                     technologies={elem.technologies}
                     />)
